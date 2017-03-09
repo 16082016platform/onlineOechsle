@@ -3,7 +3,7 @@
         <ActionBar.titleView>
             <GridLayout columns="auto, 5, *">
                 <Image src="~/images/logo.png"/>
-                <Label col="2" text="Pedidos" minWidth="100" />
+                <Label col="2" text="Pedidos"/>
             </GridLayout>
         </ActionBar.titleView> 
     </ActionBar>
@@ -34,7 +34,7 @@
                         </GridLayout>
                     </StackLayout>
                 </ListView.itemTemplate>
-            </ListView>
+            </ListView> 
 
             <GridLayout cssClass="activityIndicator" row="1" rows="*" visibility="{{isLoading ? 'visible' : 'collapsed'}}">
                 <StackLayout>

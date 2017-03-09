@@ -3,7 +3,6 @@
 }
 
 .footer StackLayout .solicitarProducto {
-    font-size: 15;
     color: white;
     background-color: #ff0000;
     padding: 5;
@@ -16,10 +15,7 @@ ListView Image {
     height: 30%;
 }
 
-.fila:pressed {
-    background-color: red;
-    transform: rotate(-30);
-}
+
 
 .colorProducto {
     width: 30;
