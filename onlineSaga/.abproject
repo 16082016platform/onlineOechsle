@@ -2,10 +2,10 @@
   "ProjectName": "onlineSaga",
   "ProjectGuid": "1e0dfb32-7e56-4159-bda8-7a61f5ccc457",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.CalzadoOechsle",
-  "DisplayName": "CalzadoOechsle",
+  "AppIdentifier": "com.telerik.OechsleCliente",
+  "DisplayName": "OechsleCliente",
   "Author": "Letrecorp SA",
-  "Description": "Para muestra de calzado en Oechsle",
+  "Description": "OechsleCliente",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [

@@ -9,7 +9,7 @@
     </ActionBar>
 
     <StackLayout id="contenedor">
-        <GridLayout rows="auto, *, auto">
+        <GridLayout rows="auto, *, auto, auto">
 
             <ListView row="1" items="{{ listItems }}" id="lista">
                 <ListView.itemTemplate>
@@ -36,14 +36,19 @@
                 </ListView.itemTemplate>
             </ListView> 
 
-            <GridLayout cssClass="activityIndicator" row="1" rows="*" visibility="{{isLoading ? 'visible' : 'collapsed'}}">
+            <GridLayout row="1" cssClass="activityIndicator"  rows="*" visibility="{{isLoading ? 'visible' : 'collapsed'}}">
                 <StackLayout>
                     <ActivityIndicator busy="true"/>
                     <Label text="Cargando..." />
                 </StackLayout>
             </GridLayout>
 
-            <GridLayout row="2" cssClass="footer" height="7%" columns="*,*,*">
+            <GridLayout row="2" cssClass="footer" height="10%" >
+                <TextField id="nombreCliente" margin="0 25% 0 25%" hint="Ingrese su nombre" />
+                <!--<Label id="hintNombreCliente" text="Ingrese su nombre"  />-->
+            </GridLayout>
+
+            <GridLayout row="3" cssClass="footer" height="7%" columns="*,*,*">
                 <StackLayout col="0">
                     <!--<Label text="Agregar más" cssClass="solicitarProducto" textWrap="true" tap="buttonBackTap" />-->
                 </StackLayout>
@@ -54,6 +59,8 @@
                     <Label text="Confirmar" cssClass="solicitarProducto" textWrap="true" tap="enviarPedido" />
                 </StackLayout>
             </GridLayout>
+
+            
 
         </GridLayout>
     </StackLayout>

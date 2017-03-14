@@ -2,7 +2,10 @@
     <Page.actionBar>
         <widgets:action-bar />
     </Page.actionBar>
+    
+    <StackLayout  verticalAlignment="middle" >
+        <Label text="{{cliente + ', en breves mometos se entregará su pedido, su código es el ' + codigo + ', retire su ticket.'}}" textWrap="true" verticalAlignment="middle" android:fontSize="100" margin="0 13% 0 13%"/>
+        <Label text="Gracias." textWrap="true" verticalAlignment="middle" android:fontSize="100" />
+    </StackLayout>
 
-    <Label text="En breves mometos se entregará su pedido" textWrap="true" verticalAlignment="middle" android:fontSize="100" margin="13%" />
-        
 </Page>

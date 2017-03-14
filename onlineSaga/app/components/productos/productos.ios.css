@@ -23,6 +23,9 @@ Repeater GridLayout.contenedor {
     padding: 15%;
     margin: 20 0 0 5%;
     width: 42.5%;
+    /*padding: 30%;
+    margin: 50 0 0 4%;
+    width: 28%;*/
 }
 
 Repeater GridLayout GridLayout {

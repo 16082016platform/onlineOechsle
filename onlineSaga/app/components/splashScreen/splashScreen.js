@@ -1,7 +1,8 @@
 'use strict';
 var isInit = true,
     helpers = require('../../utils/widgets/helper'),
-    navigationProperty = require('../../utils/widgets/navigation-property');
+    navigationProperty = require('../../utils/widgets/navigation-property'),
+    viewModel = require('./splashScreen-view-model');
 
 /*Mis vars*/
 var frameModule = require("ui/frame");
@@ -18,6 +19,15 @@ function pageLoaded(args) {
         frameModule.topmost().android.navBarVisibility = "never";
     }
 
+    page.bindingContext = viewModel;
+
+
+    var context = page.navigationContext;
+    viewModel.set('cliente', context.cliente);
+    viewModel.set('codigo', context.codigo);
+
+
+
     page.animate({
         scale: { x: 1, y: 1 },
         duration: 2000,
@@ -25,7 +35,7 @@ function pageLoaded(args) {
         return page.animate({
             scale: { x: 1.4, y: 1.4 },
             opacity: 0.7,
-            duration: 5000
+            duration: 10000
         });
     }).then(function () {
         helpers.navigate({

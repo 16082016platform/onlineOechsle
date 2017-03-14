@@ -110,7 +110,7 @@ function pageLoaded(args) {
         }
     }
     catch (err) {
-        alert(err.message);
+        // alert(err.message);
     }
 
 
